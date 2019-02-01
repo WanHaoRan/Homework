@@ -64,7 +64,7 @@ cleos push action games issue '["test3","1000.0000 WHR","memo"]' -p games@active
 使用已授权的合约用户来运行  
 `
 cleos push action gamedealer hi '["game"]' -p gamedealer@active
-`
+`<br>
 ![合约用户运行](http://www.baidu.com/img/bdlogo.gif)  
 使用未授权的测试用户来运行  
 `
