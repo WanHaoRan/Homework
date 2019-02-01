@@ -124,7 +124,7 @@ cleos push action games issue '["test3","1000.0000 WHR","memo"]' -p games@active
 使用已授权的合约用户来运行  
 ```
 cleos push action gamedealer hi '["game"]' -p gamedealer@active
-```<br>
+```  
 ![合约用户运行](https://github.com/WanHaoRan/Homework/tree/master/%E4%BD%9C%E4%B8%9A%E4%BA%8C/pictures/8.png)  
 使用未授权的测试用户来运行  
 ```
@@ -139,5 +139,5 @@ cleos push action gamedealer hi '["game"]' -p games@active
 延时调用  
 ```
 cleos push action gamedealer delay '["memo"]' -p gamedealer@active
-```<br>
+```  
 ![延时调用](https://github.com/WanHaoRan/Homework/tree/master/%E4%BD%9C%E4%B8%9A%E4%BA%8C/pictures/11.png)  
