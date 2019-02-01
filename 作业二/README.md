@@ -16,7 +16,7 @@ cleos system newaccount eosio game EOS7JGsvG5jer8fwZRRdaqJxAPbiK6KDgLjFwtEjLQtKf
 =====
 `
 cleos system newaccount eosio gamedealer EOS7JGsvG5jer8fwZRRdaqJxAPbiK6KDgLjFwtEjLQtKfiMENWriU EOS7JGsvG5jer8fwZRRdaqJxAPbiK6KDgLjFwtEjLQtKfiMENWriU --stake-net "1.0000 SYS" --stake-cpu "1.0000 SYS" --buy-ram-kbytes 5000000
-` 
+`<br>
 ![创建gamedealer用户](http://www.baidu.com/img/bdlogo.gif)  
 
 四 编写hello合约
