@@ -10,7 +10,7 @@
 ```
 cleos system newaccount eosio game EOS7JGsvG5jer8fwZRRdaqJxAPbiK6KDgLjFwtEjLQtKfiMENWriU EOS7JGsvG5jer8fwZRRdaqJxAPbiK6KDgLjFwtEjLQtKfiMENWriU --stake-net "1.0000 SYS" --stake-cpu "1.0000 SYS" --buy-ram-kbytes 5000000
 ```  
-![创建game用户](https://github.com/WanHaoRan/Homework/tree/master/%E4%BD%9C%E4%B8%9A%E4%BA%8C/pictures/1.png)  
+![创建game用户](https://github.com/WanHaoRan/Homework/tree/master/%E4%BD%9C%E4%B8%9A%E4%BA%8C/pictures/1)  
 
 三 创建合约用户gamedealer
 =====
