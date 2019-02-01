@@ -10,14 +10,14 @@
 ```
 cleos system newaccount eosio game EOS7JGsvG5jer8fwZRRdaqJxAPbiK6KDgLjFwtEjLQtKfiMENWriU EOS7JGsvG5jer8fwZRRdaqJxAPbiK6KDgLjFwtEjLQtKfiMENWriU --stake-net "1.0000 SYS" --stake-cpu "1.0000 SYS" --buy-ram-kbytes 5000000
 ```  
-![创建game用户](/pictures/1.png)  
+![创建game用户](pictures/1.png)  
 
 三 创建合约用户gamedealer
 =====
 ```
 cleos system newaccount eosio gamedealer EOS7JGsvG5jer8fwZRRdaqJxAPbiK6KDgLjFwtEjLQtKfiMENWriU EOS7JGsvG5jer8fwZRRdaqJxAPbiK6KDgLjFwtEjLQtKfiMENWriU --stake-net "1.0000 SYS" --stake-cpu "1.0000 SYS" --buy-ram-kbytes 5000000
 ```  
-![创建gamedealer用户](https://github.com/WanHaoRan/Homework/tree/master/%E4%BD%9C%E4%B8%9A%E4%BA%8C/pictures/2.png)  
+![创建gamedealer用户](pictures/2.png)  
 
 四 编写hello合约
 =====
@@ -91,19 +91,19 @@ EOSIO_DISPATCH(hello,(hi)(delay)(transfer))
 ```
 eosio-cpp -o hello.wasm hello.cpp --abigen
 ```  
-![编译hello合约](https://github.com/WanHaoRan/Homework/tree/master/%E4%BD%9C%E4%B8%9A%E4%BA%8C/pictures/3.png)  
+![编译hello合约](pictures/3.png)  
 部署合约  
 ```
 cleos set contract gamedealer /home/haoran/contracts/eosio.contracts/hello/ -p gamedealer@active
 ```  
-![部署hello合约](https://github.com/WanHaoRan/Homework/tree/master/%E4%BD%9C%E4%B8%9A%E4%BA%8C/pictures/4.png)  
+![部署hello合约](pictures/4.png)  
 
 六 授权给gamedealer账户
 =====
 ```
  cleos set account permission gamedealer active '{"threshold": 1,"keys": [{"key": "EOS7JGsvG5jer8fwZRRdaqJxAPbiK6KDgLjFwtEjLQtKfiMENWriU","weight": 1}],"accounts": [{"permission":{"actor":"gamedealer","permission":"eosio.code"},"weight":1}]}' owner -p gamedealer@owner
 ```  
-![授权](https://github.com/WanHaoRan/Homework/tree/master/%E4%BD%9C%E4%B8%9A%E4%BA%8C/pictures/5.png)  
+![授权](pictures/5.png)  
 
 七 将自己创建的代币转给gamedealer和其他账户
 =====
@@ -112,12 +112,12 @@ cleos set contract gamedealer /home/haoran/contracts/eosio.contracts/hello/ -p g
 ```
 cleos push action games issue '["gamedealer","1000.0000 WHR","memo"]' -p games@active
 ```  
-![授权](https://github.com/WanHaoRan/Homework/tree/master/%E4%BD%9C%E4%B8%9A%E4%BA%8C/pictures/6.png)   
+![授权](pictures/6.png)   
 转给测试用户  
 ```
 cleos push action games issue '["test3","1000.0000 WHR","memo"]' -p games@active
 ```  
-![授权](https://github.com/WanHaoRan/Homework/tree/master/%E4%BD%9C%E4%B8%9A%E4%BA%8C/pictures/7.png)  
+![授权](pictures/7.png)  
 
 八 运行合约
 =====
@@ -125,19 +125,19 @@ cleos push action games issue '["test3","1000.0000 WHR","memo"]' -p games@active
 ```
 cleos push action gamedealer hi '["game"]' -p gamedealer@active
 ```  
-![合约用户运行](https://github.com/WanHaoRan/Homework/tree/master/%E4%BD%9C%E4%B8%9A%E4%BA%8C/pictures/8.png)  
+![合约用户运行](pictures/8.png)  
 使用未授权的测试用户来运行  
 ```
 cleos push action gamedealer hi '["game"]' -p test3@active
 ```  
-![非合约用户运行](https://github.com/WanHaoRan/Homework/tree/master/%E4%BD%9C%E4%B8%9A%E4%BA%8C/pictures/9.png)  
+![非合约用户运行](pictures/9.png)  
 使用代币发行的用户运行  
 ```
 cleos push action gamedealer hi '["game"]' -p games@active
 ```  
-![代币发行用户运行](https://github.com/WanHaoRan/Homework/tree/master/%E4%BD%9C%E4%B8%9A%E4%BA%8C/pictures/10.png)  
+![代币发行用户运行](pictures/10.png)  
 延时调用  
 ```
 cleos push action gamedealer delay '["memo"]' -p gamedealer@active
 ```  
-![延时调用](https://github.com/WanHaoRan/Homework/tree/master/%E4%BD%9C%E4%B8%9A%E4%BA%8C/pictures/11.png)  
+![延时调用](pictures/11.png)  
