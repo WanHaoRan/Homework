@@ -79,5 +79,5 @@ cleos push action gamedealer hi '["game"]' -p games@active
 延时调用  
 `
 cleos push action gamedealer delay '["memo"]' -p gamedealer@active
-`
+`<br>
 ![延时调用](http://www.baidu.com/img/bdlogo.gif)  
