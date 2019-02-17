@@ -1,0 +1,96 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT Sun Feb 17 23:20:34 2019",
+    "version": "eosio::abi/1.1",
+    "structs": [
+        {
+            "name": "add",
+            "base": "",
+            "fields": [
+                {
+                    "name": "from",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "del",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "kpi",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "score",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "work",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "worker",
+                    "type": "name"
+                },
+                {
+                    "name": "token",
+                    "type": "asset"
+                },
+                {
+                    "name": "score",
+                    "type": "uint64"
+                },
+                {
+                    "name": "create_time",
+                    "type": "uint64"
+                }
+            ]
+        }
+    ],
+    "types": [],
+    "actions": [
+        {
+            "name": "add",
+            "type": "add",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "del",
+            "type": "del",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "kpi",
+            "type": "kpi",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "work",
+            "type": "work",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "variants": [],
+    "abi_extensions": []
+}
