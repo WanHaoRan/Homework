@@ -153,9 +153,9 @@ cleos push action gamedealer add '["wanhaoran"]' -p gamedealer@active
 ```
 cleos get table gamedealer gamedealer work
 ```  
-![查询work表当前的状态](pictures/5.png)  
+![查询work表当前的状态](pictures/6.png)  
 通过postman查询表的状态  
-![postman](pictures/6.png)
+![postman](pictures/5.png)  
 查询当前的账户状态  
 ```
 cleos get account gamedealer
@@ -178,7 +178,7 @@ cleos push action gamedealer del '["1"]' -p gamedealer@active
 
 七 执行kpi的action
 =====
-给id为2的账户一个kpi  
+给id为2的账户1个kpi  
 给之前的账户状态及table状态  
 ![给之前账户状态及table状态](pictures/10.png)  
 执行kpi action  
