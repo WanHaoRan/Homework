@@ -167,6 +167,7 @@ cleos get account gamedealer
 =====
 删除前  
 ![删除前](pictures/7.png)  
+删除的命令忘记截图了，不过是执行了的，后面的没有忘记。。
 ```
 cleos push action gamedealer del '["1"]' -p gamedealer@active
 ```  
